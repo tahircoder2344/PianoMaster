@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+body{
+    background-color: rgb(36, 35, 35);
+
+}
+/* Styling for header */
+/* Styling for header */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /* Full width of the screen */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for spacing */
+    text-align: right; /* Align content to the right */
+}
+
+/* Styling for navigation */
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Spacing between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Link text color */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+.textbox{
+    height: 250px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(110, 78, 78);
+    padding: 30px;
+    margin: 200px auto 200px;
+}
+.textbox h1{
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 3px;
+}
+.textbox p{
+    text-align: justify;
+    font-size: 1.24rem;
+    padding: 12px;
+}
+.textbox p a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+.textbox p a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.links a:hover{
+    background-color: white;
+    color: black;
+}
+.textbox i{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+@media only screen and (max-width: 600px) {
+   .textbox{
+    height: 450px ;
+    overflow: scroll;
+   }
+   h1#h1{
+    font-size: 1.5rem;
+   }
+   .links{
+    flex-direction: row;
+    margin-top: 20px;
+   }
+   .textbox#text{
+    height: 200px;
+   }
+}
